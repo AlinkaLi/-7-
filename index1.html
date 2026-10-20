@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гра: Більше число проти Боса</title>
+    <link rel="stylesheet" href="8.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1 class="game-title">Битва</h1>
+
+        <div class="game">
+            <!-- Гравець -->
+            <div class="player">
+                <div class="avatar-wrapper">
+                    <img src="8.2.png" alt="Гравець" class="avatar-img">
+                </div>
+                <h2 id="username" class="player-name">Гравець</h2>
+                <div class="score-box" id="userO">0</div>
+                <div class="circle" id="user">?</div>
+            </div>
+
+            <div class="center-controls">
+                <button id="genBtn" class="gen-btn">Generate</button>
+                <div id="status" class="status-text">Натисніть кнопку, щоб почати!</div>
+                <button id="restartBtn" class="restart-btn" style="display: none;">Грати знову</button>
+            </div>
+			
+            <div class="player boss">
+                <div class="avatar-wrapper">
+                    <img src="8.1.png" alt="Людина-Павук" class="avatar-img">
+                </div>
+                <h2 class="player-name">Бос</h2>
+                <div class="score-box boss-score" id="computerO">0</div>
+                <div class="circle boss-circle" id="computer">?</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="8.js"></script>
+</body>
+</html>
